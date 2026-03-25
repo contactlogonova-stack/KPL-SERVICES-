@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Outlet, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 
 // Import des composants de layout
 import { Navbar, Footer } from './components/layout';
@@ -27,6 +28,75 @@ import Parametres from './admin/pages/Parametres';
 import ProtectedRoute from './admin/components/ProtectedRoute';
 import DashboardLayout from './admin/components/DashboardLayout';
 
+function TitleUpdater() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const path = location.pathname;
+    let title = 'Accueil';
+
+    switch (path) {
+      case '/':
+        title = 'Accueil';
+        break;
+      case '/a-propos':
+        title = 'À propos';
+        break;
+      case '/services':
+        title = 'Services';
+        break;
+      case '/tarifs':
+        title = 'Tarifs';
+        break;
+      case '/realisations':
+        title = 'Réalisations';
+        break;
+      case '/galerie':
+        title = 'Galerie';
+        break;
+      case '/equipe':
+        title = 'Équipe';
+        break;
+      case '/contact':
+        title = 'Contact';
+        break;
+      case '/reservation':
+        title = 'Réservation';
+        break;
+      case '/admin':
+        title = 'Admin Login';
+        break;
+      case '/admin/dashboard':
+        title = 'Admin Dashboard';
+        break;
+      case '/admin/reservations':
+        title = 'Admin Réservations';
+        break;
+      case '/admin/messages':
+        title = 'Admin Messages';
+        break;
+      case '/admin/realisations':
+        title = 'Admin Réalisations';
+        break;
+      case '/admin/galerie':
+        title = 'Admin Galerie';
+        break;
+      case '/admin/temoignages':
+        title = 'Admin Témoignages';
+        break;
+      case '/admin/parametres':
+        title = 'Admin Paramètres';
+        break;
+      default:
+        title = 'Accueil';
+    }
+
+    document.title = `KPL SERVICES | ${title}`;
+  }, [location]);
+
+  return null;
+}
+
 function PublicLayout() {
   return (
     <div className="min-h-screen flex flex-col relative">
@@ -43,6 +113,7 @@ function PublicLayout() {
 function App() {
   return (
     <Router>
+      <TitleUpdater />
       <Routes>
         {/* Routes Publiques avec Layout */}
         <Route element={<PublicLayout />}>
