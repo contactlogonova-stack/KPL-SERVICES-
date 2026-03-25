@@ -15,6 +15,7 @@ import Galerie from './pages/Galerie';
 import Equipe from './pages/Equipe';
 import Contact from './pages/Contact';
 import Reservation from './pages/Reservation';
+import NotFound from './pages/NotFound';
 
 // Import des pages admin
 import Login from './admin/pages/Login';
@@ -62,6 +63,9 @@ function TitleUpdater() {
         break;
       case '/reservation':
         title = 'Réservation';
+        break;
+      case '/404':
+        title = 'Page introuvable';
         break;
       case '/admin':
         title = 'Admin Login';
@@ -126,6 +130,7 @@ function App() {
           <Route path="/equipe" element={<Equipe />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/reservation" element={<Reservation />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
 
         {/* Routes Admin (sans Layout public) */}

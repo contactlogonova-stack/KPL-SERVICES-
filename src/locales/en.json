@@ -336,6 +336,11 @@
       "home": "Back to home"
     }
   },
+  "not_found": {
+    "title": "Page not found",
+    "subtitle": "Oops! The page you are looking for does not exist or has been moved.",
+    "back_home": "Return to home"
+  },
   "notifications": {
     "banner_text": "Enable notifications to receive real-time alerts",
     "enable": "Enable",

@@ -336,6 +336,11 @@
       "home": "Retour à l'accueil"
     }
   },
+  "not_found": {
+    "title": "Page introuvable",
+    "subtitle": "Oups ! La page que vous recherchez n'existe pas ou a été déplacée.",
+    "back_home": "Retourner à l'accueil"
+  },
   "notifications": {
     "banner_text": "Activez les notifications pour recevoir les alertes en temps réel",
     "enable": "Activer",
