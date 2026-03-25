@@ -1,0 +1,327 @@
+{
+  "welcome": "Bienvenue chez KPL SERVICES",
+  "description": "Votre agence événementielle de premier choix. Nous créons des expériences inoubliables.",
+  "switch_lang": "Switch to English",
+  "hero": {
+    "badge": "KPL Events & Surprise",
+    "title": "KPL SERVICES, TOUJOURS À VOTRE SERVICE",
+    "subtitle": "Nous transformons vos idées en expériences uniques et mémorables",
+    "cta_book": "Réserver maintenant",
+    "cta_work": "Voir nos réalisations"
+  },
+  "services_preview": {
+    "title": "Nos Services",
+    "subtitle": "Des prestations sur mesure pour tous vos événements",
+    "learn_more": "En savoir plus",
+    "items": {
+      "deco": {
+        "title": "Décoration événementielle",
+        "desc": "Nous concevons des décorations sur mesure pour tous types d'événements"
+      },
+      "surprise": {
+        "title": "Organisation de surprises",
+        "desc": "Spécialistes des moments forts, nous créons des surprises uniques"
+      },
+      "themes": {
+        "title": "Thèmes personnalisés",
+        "desc": "Chaque client est unique, chaque événement aussi"
+      },
+      "coord": {
+        "title": "Coordination & Organisation",
+        "desc": "Nous gérons votre événement de A à Z"
+      },
+      "rental": {
+        "title": "Location de matériel",
+        "desc": "Du matériel de qualité pour sublimer vos événements"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Ce que disent nos clients",
+    "subtitle": "Ils nous ont fait confiance",
+    "empty": "Les témoignages arrivent bientôt...",
+    "error": "Une erreur est survenue lors du chargement des témoignages."
+  },
+  "cta_section": {
+    "title": "Prêt à créer un événement inoubliable ?",
+    "subtitle": "Contactez-nous dès aujourd'hui et donnons vie à vos rêves",
+    "book": "Réserver maintenant",
+    "contact": "Nous contacter"
+  },
+  "about": {
+    "hero": {
+      "title": "À Propos de Nous",
+      "subtitle": "Découvrez notre histoire et nos valeurs"
+    },
+    "story": {
+      "title": "Notre Histoire",
+      "text": "KPL SERVICES est née d'une passion profonde pour l'art décoratif et le désir de créer des moments inoubliables. Ce qui a commencé comme une simple envie de faire plaisir à travers des surprises s'est transformé en une véritable entreprise événementielle. Avec détermination, créativité et beaucoup d'amour pour le détail, KPL SERVICES s'est progressivement imposée comme une référence dans la création d'ambiances uniques et d'événements sur mesure."
+    },
+    "values": {
+      "title": "Nos Valeurs",
+      "items": {
+        "creativity": {
+          "title": "Créativité",
+          "desc": "Chaque événement est pensé de manière unique"
+        },
+        "excellence": {
+          "title": "Excellence",
+          "desc": "Le souci du détail est au cœur de chaque réalisation"
+        },
+        "passion": {
+          "title": "Passion",
+          "desc": "Nous faisons chaque décoration avec amour"
+        },
+        "commitment": {
+          "title": "Engagement",
+          "desc": "Satisfaction client avant tout"
+        },
+        "innovation": {
+          "title": "Innovation",
+          "desc": "Toujours proposer des concepts modernes et impactants"
+        }
+      }
+    },
+    "stats": {
+      "years": "Années d'expérience",
+      "events": "Événements réalisés",
+      "clients": "Clients satisfaits",
+      "rating": "Note moyenne"
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Nos Services",
+      "subtitle": "Des prestations sur mesure pour tous vos événements"
+    },
+    "items": {
+      "deco": {
+        "title": "Décoration Événementielle",
+        "desc": "Nous concevons et réalisons des décorations sur mesure pour tous types d'événements : Mariage (traditionnel, moderne, dot…), Anniversaire (enfants & adultes), Baby shower & gender reveal, Fiançailles & demandes en mariage, Événements professionnels. De la conception à l'installation, chaque détail est pensé pour créer une ambiance élégante et harmonieuse.",
+        "tags": ["Mariage", "Anniversaire", "Baby Shower", "Fiançailles", "Corporate"]
+      },
+      "surprise": {
+        "title": "Organisation de Surprises",
+        "desc": "Spécialistes des moments forts, nous créons des surprises uniques et chargées d'émotions : Surprises romantiques, Anniversaires surprises, Livraisons spéciales (midi, nuit, 00h…), Mises en scène personnalisées. Nous nous occupons de tout pour un effet waouh garanti.",
+        "tags": ["Romantique", "Surprise", "Livraison", "Personnalisé"]
+      },
+      "themes": {
+        "title": "Conception de Thèmes Personnalisés",
+        "desc": "Chaque client est unique, chaque événement aussi. Création de concepts originaux, Choix des couleurs, styles et ambiances, Adaptation selon votre budget, Proposition de moodboard et idées créatives. Votre vision prend vie avec une touche professionnelle.",
+        "tags": ["Concept", "Moodboard", "Créatif", "Budget"]
+      },
+      "coord": {
+        "title": "Coordination & Organisation",
+        "desc": "Nous vous accompagnons dans la gestion complète de votre événement : Planification, Organisation logistique, Coordination du jour J, Gestion des prestataires. Vous profitez pleinement pendant que nous gérons tout.",
+        "tags": ["Planification", "Logistique", "Jour J", "Prestataires"]
+      },
+      "rental": {
+        "title": "Location de Matériel",
+        "desc": "Nous mettons à disposition du matériel de qualité pour sublimer vos événements : Tables, chaises, nappes, Décorations (arches, fleurs, accessoires…), Vaisselle & éléments décoratifs, Structures événementielles (pergolas, fonds, etc.). Une solution pratique pour un rendu professionnel.",
+        "tags": ["Tables", "Chaises", "Arches", "Pergolas"]
+      }
+    },
+    "contact_btn": "Nous contacter",
+    "cta": {
+      "title": "Un projet en tête ?",
+      "subtitle": "Contactez-nous et parlons de votre événement",
+      "book": "Réserver",
+      "contact": "Contact"
+    }
+  },
+  "pricing": {
+    "hero": {
+      "title": "Nos Tarifs",
+      "subtitle": "Des formules adaptées à tous vos événements"
+    },
+    "tabs": {
+      "women": "Anniversaire Femme",
+      "men": "Anniversaire Homme",
+      "wedding": "Mariage"
+    },
+    "popular": "Populaire",
+    "book_pack": "Réserver ce pack",
+    "guests": "invités",
+    "wedding_note": "Uniquement sur réservation 3 semaines à 1 mois avant l'événement",
+    "women_packs": [
+      { "name": "Éclat de joie", "price": "15 000 FCFA", "items": ["Bouquet de fleurs", "Boîte à chocolats", "Sexy gobelet jus", "Carte d'anniversaire"] },
+      { "name": "Douce Reine", "price": "25 000 FCFA", "items": ["Taie d'oreiller/boîte à bijoux", "Bouquet de fleurs artificielles", "Boîte à chocolats", "Parfum love", "Bougie parfumée", "Carte d'anniversaire"] },
+      { "name": "Prestige Anniversaire", "price": "45 000 FCFA", "isPopular": true, "items": ["Vin personnalisé", "3 pièces de serviettes", "2 boîtes à chocolats", "Bouquet de fleurs parfumées", "Nounours moyen/boîte à bijoux", "String", "Barrette", "Parfum love", "Carte d'anniversaire VIP", "1 fanfare pour la livraison"] },
+      { "name": "Queen Signature", "price": "75 000 FCFA", "items": ["Bouquet de roses éternelles parfumées", "JP chenet", "Porte-clés", "Parfum love", "Mini sac de sortie", "Montre", "Collier", "Sexy string", "Grande boîte à chocolats", "Carte d'anniversaire VIP", "1 fanfare pour la livraison"] },
+      { "name": "Impératrice", "price": "125 000 FCFA", "items": ["Pagne Woodin spécial anniversaire", "Bijoux haut de gamme", "Sac de sortie grande dame", "Bouquet de roses éternelles", "Champagne + 1 verre", "Cadre personnalisé", "Parfum love VIP", "Coffret sucreries", "Carte d'anniversaire"] }
+    ],
+    "men_packs": [
+      { "name": "Birthday Crush", "price": "15 000 FCFA", "items": ["Vin personnalisé", "Boîte de chocolat", "Tasse", "Carte d'anniversaire personnalisée"] },
+      { "name": "Birthday King", "price": "25 000 FCFA", "isPopular": true, "items": ["Vin personnalisé", "Boîte à montre", "Boîte de chocolat", "Ceinture Gentleman", "Parfum", "Carte d'anniversaire personnalisée"] },
+      { "name": "Birthday Boss", "price": "50 000 FCFA", "items": ["Une Tondeuse", "Gamme de produits corporels pour homme", "Coffret à montre", "Casquette", "Pagnes Woodin", "Collier Homme", "Whisky", "Carte d'anniversaire personnalisée", "1 Fanfare pour la livraison"] }
+    ],
+    "wedding_packs": [
+      { "name": "Élégance", "price": "1 250 000 FCFA", "guests": 50, "bonus": "Décoration chambre d'amoureux gratuite" },
+      { "name": "Glamour", "price": "1 450 000 FCFA", "guests": 70, "bonus": "Décoration chambre d'amoureux gratuite + Carte d'invitation gratuite" },
+      { "name": "Luxury", "price": "2 050 000 FCFA", "guests": 100, "isPopular": true, "bonus": "Décoration chambre d'amoureux gratuite + Carte d'invitation gratuite" },
+      { "name": "Extra", "price": "3 050 000 FCFA", "guests": 150, "bonus": "Décoration chambre d'amoureux gratuite + Carte d'invitation gratuite" },
+      { "name": "Royal", "price": "4 050 000 FCFA", "guests": 200, "bonus": "Décoration chambre d'amoureux gratuite + Carte d'invitation gratuite" }
+    ],
+    "wedding_common": [
+      "Inclus : Salle ou espace verte, DJ/Animateur/Sonorisation, Voiture décoration, Photographe/Vidéaste, Boissons/Dragée/Traiteur, Serveuses/Gâteaux/Carte de menu",
+      "Décoration : Fond de scène, Piste de danse, Espace d'honneur, Tableau de bienvenue, Tapis rouge, Pergolat décoré, Voiture des mariés",
+      "Logistique : Table/Chaise, Couvert/Sonorisation, Mini podium, Gazon synthétique, Pot de fleurs, Nappe",
+      "Traiteur : 1 Entrée, 2 Résistances, 1 Dessert, 4 serveuses",
+      "Boissons : Eau personnalisée, Sucreries/Bières BB, Vin/Whisky, Bar à cocktails"
+    ],
+    "cta": {
+      "title": "Vous hésitez entre plusieurs formules ?",
+      "subtitle": "Contactez-nous, nous vous aiderons à choisir le pack parfait",
+      "contact": "Nous contacter",
+      "book": "Réserver"
+    }
+  },
+  "team": {
+    "hero": {
+      "title": "Notre Équipe",
+      "subtitle": "Une équipe passionnée à votre service"
+    },
+    "leader": {
+      "role": "Fondatrice & Dirigeante",
+      "badge": "Fondatrice"
+    },
+    "grid": {
+      "title": "Notre Équipe"
+    },
+    "cta": {
+      "title": "Rejoignez l'aventure KPL SERVICES",
+      "subtitle": "Ensemble, créons des moments inoubliables",
+      "contact": "Nous contacter"
+    }
+  },
+  "realisations": {
+    "hero": {
+      "title": "Nos Réalisations",
+      "subtitle": "Découvrez nos plus belles créations"
+    },
+    "filters": {
+      "all": "Tous"
+    },
+    "grid": {
+      "view_details": "Voir détails",
+      "empty": "Nos réalisations arrivent bientôt..."
+    },
+    "cta": {
+      "title": "Vous aimez nos réalisations ?",
+      "subtitle": "Contactez-nous pour créer votre événement sur mesure",
+      "book": "Réserver",
+      "contact": "Contact"
+    }
+  },
+  "gallery": {
+    "hero": {
+      "title": "Notre Galerie",
+      "subtitle": "Un aperçu de notre univers créatif"
+    },
+    "grid": {
+      "empty": "La galerie arrive bientôt..."
+    },
+    "cta": {
+      "title": "Vous souhaitez un événement comme ceux-ci ?",
+      "subtitle": "Réservez dès maintenant et créons quelque chose d'unique",
+      "book": "Réserver",
+      "contact": "Contact"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contactez-Nous",
+      "subtitle": "Nous sommes à votre écoute"
+    },
+    "info": {
+      "title": "Nos Coordonnées",
+      "address1": "Adidogomé Franciscain, face Station MRS",
+      "address2": "Ségbé Douane, à 200m église Catholique, Lomé",
+      "hours": "Lun - Sam : 8h00 - 18h00",
+      "follow": "Suivez-nous"
+    },
+    "form": {
+      "title": "Envoyez-nous un message",
+      "name": "Nom complet",
+      "email": "Adresse email",
+      "message": "Votre message",
+      "submit": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé avec succès ! Nous vous répondrons bientôt.",
+      "error": "Une erreur est survenue. Veuillez réessayer."
+    },
+    "map": {
+      "title": "Où nous trouver ?"
+    },
+    "cta": {
+      "title": "Prêt à créer votre événement ?",
+      "book": "Réserver"
+    }
+  },
+  "reservation": {
+    "steps": {
+      "details": "Coordonnées",
+      "event": "Événement",
+      "package": "Pack",
+      "summary": "Récapitulatif",
+      "confirmation": "Confirmation"
+    },
+    "step1": {
+      "title": "Vos Coordonnées",
+      "name": "Nom complet",
+      "phone": "Téléphone",
+      "email": "Email",
+      "date": "Date de l'événement",
+      "next": "Suivant"
+    },
+    "step2": {
+      "title": "Votre Événement",
+      "events": {
+        "queen": {
+          "title": "Queen Day",
+          "desc": "Célébrez la femme qui compte pour vous"
+        },
+        "king": {
+          "title": "King Day",
+          "desc": "Célébrez le roi de votre cœur"
+        },
+        "wedding": {
+          "title": "Mariage",
+          "desc": "Le plus beau jour de votre vie"
+        }
+      },
+      "prev": "Précédent",
+      "next": "Suivant"
+    },
+    "step3": {
+      "title": "Choisissez votre Pack",
+      "prev": "Précédent",
+      "next": "Suivant"
+    },
+    "step4": {
+      "title": "Récapitulatif de votre demande",
+      "name": "Nom",
+      "phone": "Téléphone",
+      "email": "Email",
+      "date": "Date",
+      "event": "Événement",
+      "package": "Pack",
+      "price": "Prix",
+      "note": "⚠️ Ceci est une demande de réservation. Notre équipe vous contactera pour confirmer.",
+      "prev": "Précédent",
+      "submit": "Soumettre",
+      "sending": "Envoi en cours...",
+      "error": "Une erreur est survenue. Veuillez réessayer."
+    },
+    "step5": {
+      "title": "Demande envoyée avec succès !",
+      "message": "Merci pour votre demande. Notre équipe KPL SERVICES vous contactera dans les plus brefs délais au +228 91 33 34 68 pour confirmer votre réservation.",
+      "home": "Retour à l'accueil"
+    }
+  },
+  "notifications": {
+    "banner_text": "Activez les notifications pour recevoir les alertes en temps réel",
+    "enable": "Activer",
+    "close": "Fermer"
+  }
+}

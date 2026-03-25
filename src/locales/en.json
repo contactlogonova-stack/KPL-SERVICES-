@@ -1,0 +1,327 @@
+{
+  "welcome": "Welcome to KPL SERVICES",
+  "description": "Your premier event agency. We create unforgettable experiences.",
+  "switch_lang": "Passer en Français",
+  "hero": {
+    "badge": "KPL Events & Surprise",
+    "title": "KPL SERVICES, ALWAYS AT YOUR SERVICE",
+    "subtitle": "We transform your ideas into unique and memorable experiences",
+    "cta_book": "Book now",
+    "cta_work": "See our work"
+  },
+  "services_preview": {
+    "title": "Our Services",
+    "subtitle": "Custom services for all your events",
+    "learn_more": "Learn more",
+    "items": {
+      "deco": {
+        "title": "Event Decoration",
+        "desc": "We design custom decorations for all types of events"
+      },
+      "surprise": {
+        "title": "Surprise Organization",
+        "desc": "Specialists in special moments, we create unique surprises"
+      },
+      "themes": {
+        "title": "Custom Themes",
+        "desc": "Every client is unique, every event too"
+      },
+      "coord": {
+        "title": "Coordination & Organization",
+        "desc": "We manage your event from A to Z"
+      },
+      "rental": {
+        "title": "Equipment Rental",
+        "desc": "Quality equipment to enhance your events"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "What our clients say",
+    "subtitle": "They trusted us",
+    "empty": "Testimonials coming soon...",
+    "error": "An error occurred while loading testimonials."
+  },
+  "cta_section": {
+    "title": "Ready to create an unforgettable event?",
+    "subtitle": "Contact us today and let's bring your dreams to life",
+    "book": "Book now",
+    "contact": "Contact us"
+  },
+  "about": {
+    "hero": {
+      "title": "About Us",
+      "subtitle": "Discover our story and values"
+    },
+    "story": {
+      "title": "Our Story",
+      "text": "KPL SERVICES was born from a deep passion for decorative art and the desire to create unforgettable moments. What started as a simple desire to please through surprises has transformed into a true event company. With determination, creativity and a lot of love for detail, KPL SERVICES has gradually established itself as a reference in creating unique atmospheres and tailor-made events."
+    },
+    "values": {
+      "title": "Our Values",
+      "items": {
+        "creativity": {
+          "title": "Creativity",
+          "desc": "Every event is uniquely designed"
+        },
+        "excellence": {
+          "title": "Excellence",
+          "desc": "Attention to detail is at the heart of every creation"
+        },
+        "passion": {
+          "title": "Passion",
+          "desc": "We make every decoration with love"
+        },
+        "commitment": {
+          "title": "Commitment",
+          "desc": "Customer satisfaction above all"
+        },
+        "innovation": {
+          "title": "Innovation",
+          "desc": "Always offering modern and impactful concepts"
+        }
+      }
+    },
+    "stats": {
+      "years": "Years of experience",
+      "events": "Events completed",
+      "clients": "Satisfied clients",
+      "rating": "Average rating"
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Our Services",
+      "subtitle": "Custom services for all your events"
+    },
+    "items": {
+      "deco": {
+        "title": "Event Decoration",
+        "desc": "We design and create custom decorations for all types of events: Wedding (traditional, modern...), Birthday (children & adults), Baby shower & gender reveal, Engagements & marriage proposals, Professional events. From design to installation, every detail is crafted to create an elegant and harmonious atmosphere.",
+        "tags": ["Wedding", "Birthday", "Baby Shower", "Engagement", "Corporate"]
+      },
+      "surprise": {
+        "title": "Surprise Organization",
+        "desc": "Specialists in special moments, we create unique and emotional surprises: Romantic surprises, Surprise birthdays, Special deliveries (noon, night, midnight...), Personalized staging. We handle everything for a guaranteed wow effect.",
+        "tags": ["Romantic", "Surprise", "Delivery", "Personalized"]
+      },
+      "themes": {
+        "title": "Custom Theme Design",
+        "desc": "Every client is unique, every event too. Creation of original concepts, Choice of colors, styles and atmospheres, Adaptation to your budget, Moodboard proposals and creative ideas. Your vision comes to life with a professional touch.",
+        "tags": ["Concept", "Moodboard", "Creative", "Budget"]
+      },
+      "coord": {
+        "title": "Coordination & Organization",
+        "desc": "We support you in the complete management of your event: Planning, Logistical organization, Day-of coordination, Vendor management. You enjoy fully while we handle everything.",
+        "tags": ["Planning", "Logistics", "D-Day", "Vendors"]
+      },
+      "rental": {
+        "title": "Equipment Rental",
+        "desc": "We provide quality equipment to enhance your events: Tables, chairs, tablecloths, Decorations (arches, flowers, accessories...), Tableware & decorative elements, Event structures (pergolas, backdrops, etc.). A practical solution for professional results.",
+        "tags": ["Tables", "Chairs", "Arches", "Pergolas"]
+      }
+    },
+    "contact_btn": "Contact us",
+    "cta": {
+      "title": "Have a project in mind?",
+      "subtitle": "Contact us and let's talk about your event",
+      "book": "Book",
+      "contact": "Contact"
+    }
+  },
+  "pricing": {
+    "hero": {
+      "title": "Our Pricing",
+      "subtitle": "Packages adapted to all your events"
+    },
+    "tabs": {
+      "women": "Women's Birthday",
+      "men": "Men's Birthday",
+      "wedding": "Wedding"
+    },
+    "popular": "Popular",
+    "book_pack": "Book this package",
+    "guests": "guests",
+    "wedding_note": "Only on reservation 3 weeks to 1 month before the event",
+    "women_packs": [
+      { "name": "Éclat de joie", "price": "15 000 FCFA", "items": ["Flower bouquet", "Box of chocolates", "Sexy juice cup", "Birthday card"] },
+      { "name": "Douce Reine", "price": "25 000 FCFA", "items": ["Pillowcase/jewelry box", "Artificial flower bouquet", "Box of chocolates", "Love perfume", "Scented candle", "Birthday card"] },
+      { "name": "Prestige Anniversaire", "price": "45 000 FCFA", "isPopular": true, "items": ["Personalized wine", "3-piece towel set", "2 boxes of chocolates", "Scented flower bouquet", "Medium teddy bear/jewelry box", "Thong", "Hair clip", "Love perfume", "VIP birthday card", "1 brass band for delivery"] },
+      { "name": "Queen Signature", "price": "75 000 FCFA", "items": ["Eternal scented roses bouquet", "JP Chenet", "Keychain", "Love perfume", "Mini going-out bag", "Watch", "Necklace", "Sexy thong", "Large box of chocolates", "VIP birthday card", "1 brass band for delivery"] },
+      { "name": "Impératrice", "price": "125 000 FCFA", "items": ["Special birthday Woodin fabric", "High-end jewelry", "Lady's going-out bag", "Eternal roses bouquet", "Champagne + 1 glass", "Personalized frame", "VIP Love perfume", "Sweets box", "Birthday card"] }
+    ],
+    "men_packs": [
+      { "name": "Birthday Crush", "price": "15 000 FCFA", "items": ["Personalized wine", "Box of chocolates", "Mug", "Personalized birthday card"] },
+      { "name": "Birthday King", "price": "25 000 FCFA", "isPopular": true, "items": ["Personalized wine", "Watch box", "Box of chocolates", "Gentleman's belt", "Perfume", "Personalized birthday card"] },
+      { "name": "Birthday Boss", "price": "50 000 FCFA", "items": ["Hair clipper", "Men's body care range", "Watch box", "Cap", "Woodin fabrics", "Men's necklace", "Whiskey", "Personalized birthday card", "1 Brass band for delivery"] }
+    ],
+    "wedding_packs": [
+      { "name": "Élégance", "price": "1 250 000 FCFA", "guests": 50, "bonus": "Free lovers' room decoration" },
+      { "name": "Glamour", "price": "1 450 000 FCFA", "guests": 70, "bonus": "Free lovers' room decoration + Free invitation card" },
+      { "name": "Luxury", "price": "2 050 000 FCFA", "guests": 100, "isPopular": true, "bonus": "Free lovers' room decoration + Free invitation card" },
+      { "name": "Extra", "price": "3 050 000 FCFA", "guests": 150, "bonus": "Free lovers' room decoration + Free invitation card" },
+      { "name": "Royal", "price": "4 050 000 FCFA", "guests": 200, "bonus": "Free lovers' room decoration + Free invitation card" }
+    ],
+    "wedding_common": [
+      "Included: Hall or green space, DJ/Host/Sound system, Car decoration, Photographer/Videographer, Drinks/Sugared almonds/Caterer, Waitresses/Cakes/Menu card",
+      "Decoration: Backdrop, Dance floor, Honor space, Welcome board, Red carpet, Decorated pergola, Bride and groom's car",
+      "Logistics: Table/Chair, Cutlery/Sound system, Mini podium, Synthetic turf, Flower pot, Tablecloth",
+      "Caterer: 1 Starter, 2 Main courses, 1 Dessert, 4 waitresses",
+      "Drinks: Personalized water, Sweets/BB Beers, Wine/Whiskey, Cocktail bar"
+    ],
+    "cta": {
+      "title": "Can't decide between packages?",
+      "subtitle": "Contact us, we'll help you choose the perfect package",
+      "contact": "Contact us",
+      "book": "Book"
+    }
+  },
+  "team": {
+    "hero": {
+      "title": "Our Team",
+      "subtitle": "A passionate team at your service"
+    },
+    "leader": {
+      "role": "Founder & CEO",
+      "badge": "Founder"
+    },
+    "grid": {
+      "title": "Meet The Team"
+    },
+    "cta": {
+      "title": "Join the KPL SERVICES adventure",
+      "subtitle": "Together, let's create unforgettable moments",
+      "contact": "Contact us"
+    }
+  },
+  "realisations": {
+    "hero": {
+      "title": "Our Work",
+      "subtitle": "Discover our most beautiful creations"
+    },
+    "filters": {
+      "all": "All"
+    },
+    "grid": {
+      "view_details": "View details",
+      "empty": "Our work is coming soon..."
+    },
+    "cta": {
+      "title": "Do you like our work?",
+      "subtitle": "Contact us to create your custom event",
+      "book": "Book",
+      "contact": "Contact"
+    }
+  },
+  "gallery": {
+    "hero": {
+      "title": "Our Gallery",
+      "subtitle": "A glimpse of our creative world"
+    },
+    "grid": {
+      "empty": "Gallery coming soon..."
+    },
+    "cta": {
+      "title": "Want an event like these?",
+      "subtitle": "Book now and let's create something unique",
+      "book": "Book",
+      "contact": "Contact"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact Us",
+      "subtitle": "We are here for you"
+    },
+    "info": {
+      "title": "Our Contact Info",
+      "address1": "Adidogomé Franciscain, opposite MRS Station",
+      "address2": "Ségbé Douane, 200m from Catholic church, Lomé",
+      "hours": "Mon - Sat : 8:00 AM - 6:00 PM",
+      "follow": "Follow us"
+    },
+    "form": {
+      "title": "Send us a message",
+      "name": "Full name",
+      "email": "Email address",
+      "message": "Your message",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "success": "Message sent successfully! We will get back to you soon.",
+      "error": "An error occurred. Please try again."
+    },
+    "map": {
+      "title": "Where to find us?"
+    },
+    "cta": {
+      "title": "Ready to create your event?",
+      "book": "Book"
+    }
+  },
+  "reservation": {
+    "steps": {
+      "details": "Details",
+      "event": "Event",
+      "package": "Package",
+      "summary": "Summary",
+      "confirmation": "Confirmation"
+    },
+    "step1": {
+      "title": "Your Details",
+      "name": "Full name",
+      "phone": "Phone",
+      "email": "Email",
+      "date": "Event date",
+      "next": "Next"
+    },
+    "step2": {
+      "title": "Your Event",
+      "events": {
+        "queen": {
+          "title": "Queen Day",
+          "desc": "Celebrate the woman who matters to you"
+        },
+        "king": {
+          "title": "King Day",
+          "desc": "Celebrate the king of your heart"
+        },
+        "wedding": {
+          "title": "Wedding",
+          "desc": "The most beautiful day of your life"
+        }
+      },
+      "prev": "Previous",
+      "next": "Next"
+    },
+    "step3": {
+      "title": "Choose your Package",
+      "prev": "Previous",
+      "next": "Next"
+    },
+    "step4": {
+      "title": "Summary of your request",
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "date": "Date",
+      "event": "Event",
+      "package": "Package",
+      "price": "Price",
+      "note": "⚠️ This is a reservation request. Our team will contact you to confirm.",
+      "prev": "Previous",
+      "submit": "Submit",
+      "sending": "Sending...",
+      "error": "An error occurred. Please try again."
+    },
+    "step5": {
+      "title": "Request sent successfully!",
+      "message": "Thank you for your request. Our KPL SERVICES team will contact you as soon as possible at +228 91 33 34 68 to confirm your reservation.",
+      "home": "Back to home"
+    }
+  },
+  "notifications": {
+    "banner_text": "Enable notifications to receive real-time alerts",
+    "enable": "Enable",
+    "close": "Close"
+  }
+}
