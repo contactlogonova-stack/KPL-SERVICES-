@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Loader2, CheckCircle2, XCircle } from 'lucide-react';
 import { supabase } from '../../lib/supabase';
-import { notifyNewMessage } from '../../utils/notificationService';
+import { useNotifications } from '../../hooks/useNotifications';
 
 // Custom TikTok Icon since it's not in Lucide
 const TikTokIcon = ({ className }: { className?: string }) => (
@@ -23,6 +23,7 @@ const TikTokIcon = ({ className }: { className?: string }) => (
 
 export default function Contact() {
   const { t } = useTranslation();
+  const { sendNotification } = useNotifications();
   
   const [formData, setFormData] = useState({
     nom: '',
@@ -65,7 +66,7 @@ export default function Contact() {
       
       // Envoi des notifications
       try {
-        notifyNewMessage(formData.nom);
+        sendNotification('💬 Nouveau Message !', `${formData.nom} vous a envoyé un message`);
       } catch (notifError) {
         console.error('Erreur lors de l\'envoi des notifications:', notifError);
       }

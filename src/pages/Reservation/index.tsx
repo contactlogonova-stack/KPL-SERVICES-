@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { Check, Cake, Crown, Heart, CheckCircle, Loader2, ChevronLeft, ChevronRight } from 'lucide-react';
 import { supabase } from '../../lib/supabase';
-import { notifyNewReservation } from '../../utils/notificationService';
+import { useNotifications } from '../../hooks/useNotifications';
 
 interface FormData {
   nom: string;
@@ -45,6 +45,8 @@ export default function Reservation() {
   const [step, setStep] = useState(1);
   const [direction, setDirection] = useState(1);
   const [status, setStatus] = useState<'idle' | 'loading' | 'error'>('idle');
+  
+  const { sendNotification } = useNotifications();
   
   const [formData, setFormData] = useState<FormData>({
     nom: '',
@@ -106,7 +108,10 @@ export default function Reservation() {
       
       // Envoi des notifications
       try {
-        notifyNewReservation(formData.nom, formData.type_evenement, formData.pack_choisi);
+        sendNotification(
+          '🎉 Nouvelle Réservation !',
+          `${formData.nom} — ${formData.pack_choisi} — ${formData.type_evenement}`
+        );
       } catch (notifError) {
         console.error('Erreur lors de l\'envoi des notifications:', notifError);
         // On ne bloque pas l'utilisateur si la notification échoue

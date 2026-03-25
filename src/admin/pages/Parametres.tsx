@@ -16,7 +16,7 @@ export default function Parametres() {
   const [toast, setToast] = useState<{ message: string; type: 'success' | 'error' } | null>(null);
 
   // Notifications
-  const { permission, requestPermission, sendNotification } = useNotifications();
+  const { permission, isSupported, requestPermission, sendNotification } = useNotifications();
 
   useEffect(() => {
     const fetchUser = async () => {
@@ -218,7 +218,7 @@ export default function Parametres() {
             </div>
 
             <div className="flex flex-wrap gap-3">
-              {permission !== 'granted' && (
+              {permission !== 'granted' && isSupported && (
                 <button
                   onClick={requestPermission}
                   className="px-4 py-2 bg-gray-900 text-white font-medium rounded-lg hover:bg-gray-800 transition-colors"
@@ -227,13 +227,14 @@ export default function Parametres() {
                 </button>
               )}
               
-              <button
-                onClick={handleTestNotification}
-                disabled={permission !== 'granted'}
-                className="px-4 py-2 bg-white border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                Tester la notification
-              </button>
+              {permission === 'granted' && (
+                <button
+                  onClick={handleTestNotification}
+                  className="px-4 py-2 bg-white border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors"
+                >
+                  Tester la notification
+                </button>
+              )}
             </div>
             
             {permission === 'denied' && (

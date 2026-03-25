@@ -1,35 +1,40 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react'
 
 export function useNotifications() {
-  const [permission, setPermission] = useState<NotificationPermission>('default');
+  const [permission, setPermission] = useState<NotificationPermission>(
+    typeof Notification !== 'undefined'
+      ? Notification.permission
+      : 'default'
+  )
+
+  const isSupported = typeof Notification !== 'undefined'
 
   useEffect(() => {
-    if ('Notification' in window) {
-      setPermission(Notification.permission);
+    if (isSupported) {
+      setPermission(Notification.permission)
     }
-  }, []);
+  }, [])
 
   const requestPermission = async () => {
-    if (!('Notification' in window)) {
-      console.warn('Ce navigateur ne supporte pas les notifications desktop');
-      return 'denied';
-    }
-    
-    try {
-      const result = await Notification.requestPermission();
-      setPermission(result);
-      return result;
-    } catch (error) {
-      console.error('Erreur lors de la demande de permission:', error);
-      return 'denied';
-    }
-  };
+    if (!isSupported) return 'denied'
+    const result = await Notification.requestPermission()
+    setPermission(result)
+    return result
+  }
 
   const sendNotification = (title: string, body: string) => {
-    if (permission === 'granted') {
-      new Notification(title, { body });
+    if (!isSupported) return
+    if (Notification.permission !== 'granted') return
+    try {
+      new Notification(title, {
+        body,
+        icon: '/favicon.ico',
+        badge: '/favicon.ico'
+      })
+    } catch (error) {
+      console.error('Notification error:', error)
     }
-  };
+  }
 
-  return { permission, requestPermission, sendNotification };
+  return { permission, isSupported, requestPermission, sendNotification }
 }
