@@ -22,17 +22,29 @@ export function useNotifications() {
     return result
   }
 
-  const sendNotification = (title: string, body: string) => {
+  const sendNotification = async (title: string, body: string) => {
     if (!isSupported) return
     if (Notification.permission !== 'granted') return
     try {
-      new Notification(title, {
-        body,
-        icon: '/favicon.ico',
-        badge: '/favicon.ico'
-      })
+      // Essaie Service Worker d'abord (mobile)
+      if ('serviceWorker' in navigator) {
+        const registration = await navigator.serviceWorker.ready
+        await registration.showNotification(title, {
+          body,
+          icon: '/favicon.ico',
+          badge: '/favicon.ico'
+        })
+      } else {
+        // Fallback desktop
+        new Notification(title, { body, icon: '/favicon.ico' })
+      }
     } catch (error) {
-      console.error('Notification error:', error)
+      // Fallback si Service Worker échoue
+      try {
+        new Notification(title, { body, icon: '/favicon.ico' })
+      } catch (e) {
+        console.error('Notification error:', e)
+      }
     }
   }
 
