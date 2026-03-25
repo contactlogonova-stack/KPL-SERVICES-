@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, useInView } from 'motion/react';
 import { Heart, Lightbulb, Star, Shield, Zap } from 'lucide-react';
+import { SEO } from '../../components/SEO';
 
 const AnimatedCounter = ({ target, suffix, title }: { target: number, suffix: string, title: string }) => {
   const [count, setCount] = useState(0);
@@ -70,15 +71,24 @@ export default function APropos() {
 
   return (
     <div className="flex flex-col w-full">
+      <SEO 
+        title="À Propos"
+        description="Découvrez l'histoire et les valeurs de KPL SERVICES, agence événementielle passionnée basée à Lomé, Togo. 7 ans d'expérience, 400+ événements réalisés."
+        keywords="à propos KPL SERVICES, histoire agence événementielle, Lomé Togo"
+        image="https://i.postimg.cc/gwc0g99r/a-propos.jpg"
+        url="/a-propos"
+      />
       {/* SECTION 1 - Hero */}
-      <section className="relative w-full h-[40vh] flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 z-0"
-          style={{
-            background: 'linear-gradient(135deg, #E91E8C 0%, #D4AF37 100%)'
-          }}
-        />
-        <div className="absolute inset-0 z-10 bg-black/40" />
+      <section 
+        className="relative w-full h-[40vh] flex items-center justify-center overflow-hidden"
+        style={{
+          backgroundImage: 'url(https://i.postimg.cc/gwc0g99r/a-propos.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        <div className="absolute inset-0 z-10 bg-black/55" />
         
         <div className="relative z-20 text-center px-4">
           <motion.h1
@@ -124,9 +134,12 @@ export default function APropos() {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6 }}
               className="relative h-[400px] rounded-2xl overflow-hidden flex items-center justify-center shadow-lg"
-              style={{ background: 'linear-gradient(135deg, rgba(233,30,140,0.1) 0%, rgba(212,175,55,0.2) 100%)' }}
             >
-              <Heart className="w-24 h-24 text-primary opacity-80" />
+              <img 
+                src="https://i.postimg.cc/prz2KXnp/IMG-6718.jpg" 
+                alt="Notre Histoire KPL SERVICES" 
+                className="w-full h-full object-cover rounded-2xl shadow-lg"
+              />
             </motion.div>
           </div>
         </div>

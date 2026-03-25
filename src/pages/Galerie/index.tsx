@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { Camera, ZoomIn, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { supabase } from '../../lib/supabase';
+import { SEO } from '../../components/SEO';
 
 interface GalleryPhoto {
   id: string;
@@ -77,6 +78,13 @@ export default function Galerie() {
 
   return (
     <div className="flex flex-col w-full min-h-screen">
+      <SEO 
+        title="Galerie Photo"
+        description="Explorez la galerie photo de KPL SERVICES. Des images inspirantes de nos plus belles décorations événementielles à Lomé, Togo."
+        keywords="galerie photo décoration, images mariage Lomé, photos événement Togo"
+        image="https://i.postimg.cc/Wb04fX0v/galerie.jpg"
+        url="/galerie"
+      />
       {/* SECTION 1 - Hero Galerie */}
       <section className="relative w-full h-[40vh] flex items-center justify-center overflow-hidden">
         <div 

@@ -2,6 +2,23 @@
   "welcome": "Welcome to KPL SERVICES",
   "description": "Your premier event agency. We create unforgettable experiences.",
   "switch_lang": "Passer en Français",
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "pricing": "Pricing",
+    "work": "Our Work",
+    "gallery": "Gallery",
+    "team": "Our Team",
+    "contact": "Contact",
+    "book": "Book"
+  },
+  "footer": {
+    "quick_links": "Quick Links",
+    "contact_social": "Contact & Socials",
+    "rights": "All rights reserved",
+    "developed_by": "Developed by"
+  },
   "hero": {
     "badge": "KPL Events & Surprise",
     "title": "KPL SERVICES, ALWAYS AT YOUR SERVICE",

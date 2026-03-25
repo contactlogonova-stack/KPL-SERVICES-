@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Check, Cake, Crown, Heart, CheckCircle, Loader2, ChevronLeft, ChevronRight } from 'lucide-react';
 import { supabase } from '../../lib/supabase';
 import { useNotifications } from '../../hooks/useNotifications';
+import { SEO } from '../../components/SEO';
 
 interface FormData {
   nom: string;
@@ -160,6 +161,12 @@ export default function Reservation() {
 
   return (
     <div className="min-h-screen bg-stone-50 py-20 px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+      <SEO 
+        title="Réserver"
+        description="Réservez votre décoration événementielle avec KPL SERVICES. Choisissez votre pack et planifiez votre événement à Lomé en quelques clics."
+        keywords="réservation décoration, réserver événement Lomé, pack anniversaire, devis mariage Togo"
+        url="/reservation"
+      />
       
       {/* Progress Bar */}
       <div className="w-full max-w-4xl mb-12">

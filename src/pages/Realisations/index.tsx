@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { Images, X, ChevronLeft, ChevronRight, Calendar, Tag } from 'lucide-react';
 import { supabase } from '../../lib/supabase';
+import { SEO } from '../../components/SEO';
 
 interface Category {
   id: string;
@@ -133,15 +134,24 @@ export default function Realisations() {
 
   return (
     <div className="flex flex-col w-full min-h-screen">
+      <SEO 
+        title="Nos Réalisations"
+        description="Découvrez les réalisations de KPL SERVICES : mariages, anniversaires, événements d'entreprise. Des décorations uniques et sur mesure à Lomé, Togo."
+        keywords="réalisations décoration, portfolio événementiel, mariage Lomé, anniversaire Togo"
+        image="https://i.postimg.cc/SnfsLSPF/realisations.jpg"
+        url="/realisations"
+      />
       {/* SECTION 1 - Hero Réalisations */}
-      <section className="relative w-full h-[40vh] flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 z-0"
-          style={{
-            background: 'linear-gradient(135deg, #D4AF37 0%, #C0392B 100%)'
-          }}
-        />
-        <div className="absolute inset-0 z-10 bg-black/40" />
+      <section 
+        className="relative w-full h-[40vh] flex items-center justify-center overflow-hidden"
+        style={{
+          backgroundImage: 'url(https://i.postimg.cc/SnfsLSPF/realisations.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        <div className="absolute inset-0 z-10 bg-black/55" />
         
         <div className="relative z-20 text-center px-4">
           <motion.h1

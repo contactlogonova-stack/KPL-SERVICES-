@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { Award } from 'lucide-react';
+import { SEO } from '../../components/SEO';
 
 export default function Equipe() {
   const { t } = useTranslation();
@@ -35,6 +36,13 @@ export default function Equipe() {
 
   return (
     <div className="flex flex-col w-full">
+      <SEO 
+        title="Notre Équipe"
+        description="Rencontrez l'équipe de KPL SERVICES, dirigée par KPOSSOUALI LYDIE. Des professionnels passionnés par la décoration et l'organisation d'événements à Lomé."
+        keywords="équipe KPL SERVICES, décorateurs Lomé, organisateurs événement Togo, KPOSSOUALI LYDIE"
+        image="https://i.postimg.cc/zX2vF5Wk/equipe.jpg"
+        url="/equipe"
+      />
       {/* SECTION 1 - Hero Équipe */}
       <section className="relative w-full h-[40vh] flex items-center justify-center overflow-hidden">
         <div 

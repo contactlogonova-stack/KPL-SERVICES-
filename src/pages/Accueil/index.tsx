@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { Palette, Gift, Sparkles, ClipboardList, Armchair, ArrowRight } from 'lucide-react';
 import TestimonialsSection from './TestimonialsSection';
+import { SEO } from '../../components/SEO';
 
 export default function Accueil() {
   const { t } = useTranslation();
@@ -51,16 +52,23 @@ export default function Accueil() {
 
   return (
     <div className="flex flex-col w-full">
+      <SEO 
+        title="Accueil"
+        description="KPL SERVICES - Agence de décoration événementielle à Lomé, Togo. Mariages, anniversaires, surprises et événements sur mesure. Toujours à votre service."
+        keywords="décoration événementielle, mariage Lomé, anniversaire Togo, KPL SERVICES, organisation événement"
+        image="https://i.postimg.cc/JHX7sMJC/accueil.jpg"
+        url="/"
+      />
       {/* Hero Section */}
-      <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Placeholder */}
-        <div 
-          className="absolute inset-0 z-0"
-          style={{
-            background: 'linear-gradient(135deg, #E91E8C 0%, #D4AF37 50%, #C0392B 100%)'
-          }}
-        />
-        
+      <section 
+        className="relative w-full h-screen flex items-center justify-center overflow-hidden"
+        style={{
+          backgroundImage: 'url(https://i.postimg.cc/JHX7sMJC/accueil.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
         {/* Dark Overlay */}
         <div className="absolute inset-0 z-10 bg-black/55" />
 

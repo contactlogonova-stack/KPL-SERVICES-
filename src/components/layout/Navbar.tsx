@@ -6,7 +6,7 @@ import { Menu, X } from 'lucide-react';
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   // Fallback to 'fr' if i18n is not fully initialized yet
   const currentLang = i18n.language || 'fr';
@@ -16,14 +16,14 @@ export function Navbar() {
   };
 
   const navLinks = [
-    { name: 'Accueil', path: '/' },
-    { name: 'À Propos', path: '/a-propos' },
-    { name: 'Services', path: '/services' },
-    { name: 'Tarifs', path: '/tarifs' },
-    { name: 'Réalisations', path: '/realisations' },
-    { name: 'Galerie', path: '/galerie' },
-    { name: 'Notre Équipe', path: '/equipe' },
-    { name: 'Contact', path: '/contact' },
+    { name: t('nav.home'), path: '/' },
+    { name: t('nav.about'), path: '/a-propos' },
+    { name: t('nav.services'), path: '/services' },
+    { name: t('nav.pricing'), path: '/tarifs' },
+    { name: t('nav.work'), path: '/realisations' },
+    { name: t('nav.gallery'), path: '/galerie' },
+    { name: t('nav.team'), path: '/equipe' },
+    { name: t('nav.contact'), path: '/contact' },
   ];
 
   const closeMenu = () => setIsOpen(false);
@@ -36,7 +36,11 @@ export function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="text-2xl font-bold text-primary" onClick={closeMenu}>
-              KPL SERVICES
+              <img
+                src="https://i.postimg.cc/vZQQ6y8s/logo.png"
+                alt="KPL SERVICES"
+                className="h-12 w-auto object-contain"
+              />
             </Link>
           </div>
 
@@ -93,7 +97,7 @@ export function Navbar() {
               to="/reservation"
               className="bg-primary hover:bg-primary/90 text-white px-5 py-2.5 rounded-md text-sm font-medium transition-colors"
             >
-              Réserver
+              {t('nav.book')}
             </Link>
           </div>
 
@@ -161,7 +165,7 @@ export function Navbar() {
                 onClick={closeMenu}
                 className="block w-full text-center bg-primary hover:bg-primary/90 text-white px-5 py-4 rounded-md text-lg font-medium transition-colors"
               >
-                Réserver
+                {t('nav.book')}
               </Link>
             </div>
           </div>

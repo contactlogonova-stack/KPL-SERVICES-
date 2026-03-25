@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { Check, Star } from 'lucide-react';
+import { SEO } from '../../components/SEO';
 
 type TabType = 'women' | 'men' | 'wedding';
 
@@ -94,15 +95,24 @@ export default function Tarifs() {
 
   return (
     <div className="flex flex-col w-full">
+      <SEO 
+        title="Nos Tarifs"
+        description="Découvrez les tarifs et formules de KPL SERVICES : packs anniversaire femme, homme et mariage. Des formules adaptées à tous les budgets à Lomé, Togo."
+        keywords="tarifs décoration, prix mariage Togo, pack anniversaire, formules événement Lomé"
+        image="https://i.postimg.cc/qtB71ffY/tarifs.png"
+        url="/tarifs"
+      />
       {/* SECTION 1 - Hero Tarifs */}
-      <section className="relative w-full h-[40vh] flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 z-0"
-          style={{
-            background: 'linear-gradient(135deg, #C0392B 0%, #E91E8C 100%)'
-          }}
-        />
-        <div className="absolute inset-0 z-10 bg-black/40" />
+      <section 
+        className="relative w-full h-[40vh] flex items-center justify-center overflow-hidden"
+        style={{
+          backgroundImage: 'url(https://i.postimg.cc/qtB71ffY/tarifs.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        <div className="absolute inset-0 z-10 bg-black/55" />
         
         <div className="relative z-20 text-center px-4">
           <motion.h1

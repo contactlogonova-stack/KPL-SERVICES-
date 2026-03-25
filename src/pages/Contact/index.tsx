@@ -5,6 +5,7 @@ import { motion } from 'motion/react';
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Loader2, CheckCircle2, XCircle } from 'lucide-react';
 import { supabase } from '../../lib/supabase';
 import { useNotifications } from '../../hooks/useNotifications';
+import { SEO } from '../../components/SEO';
 
 // Custom TikTok Icon since it's not in Lucide
 const TikTokIcon = ({ className }: { className?: string }) => (
@@ -92,6 +93,13 @@ export default function Contact() {
 
   return (
     <div className="flex flex-col w-full min-h-screen">
+      <SEO 
+        title="Contactez-nous"
+        description="Contactez KPL SERVICES pour votre prochain événement à Lomé, Togo. Demandez un devis gratuit ou posez-nous vos questions."
+        keywords="contact KPL SERVICES, devis décoration Lomé, agence événementielle Togo"
+        image="https://i.postimg.cc/q79r1vBq/contact.jpg"
+        url="/contact"
+      />
       {/* SECTION 1 - Hero Contact */}
       <section className="relative w-full h-[40vh] flex items-center justify-center overflow-hidden">
         <div 

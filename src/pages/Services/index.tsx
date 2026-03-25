@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { Palette, Gift, Sparkles, ClipboardList, Armchair, ArrowRight } from 'lucide-react';
+import { SEO } from '../../components/SEO';
 
 export default function Services() {
   const { t } = useTranslation();
@@ -36,15 +37,24 @@ export default function Services() {
 
   return (
     <div className="flex flex-col w-full">
+      <SEO 
+        title="Nos Services"
+        description="KPL SERVICES propose la décoration événementielle, organisation de surprises, thèmes personnalisés, coordination et location de matériel à Lomé, Togo."
+        keywords="services décoration, organisation surprise, location matériel événement, Lomé"
+        image="https://i.postimg.cc/xcbNmSYQ/services.jpg"
+        url="/services"
+      />
       {/* SECTION 1 - Hero Services */}
-      <section className="relative w-full h-[40vh] flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 z-0"
-          style={{
-            background: 'linear-gradient(135deg, #D4AF37 0%, #E91E8C 100%)'
-          }}
-        />
-        <div className="absolute inset-0 z-10 bg-black/40" />
+      <section 
+        className="relative w-full h-[40vh] flex items-center justify-center overflow-hidden"
+        style={{
+          backgroundImage: 'url(https://i.postimg.cc/xcbNmSYQ/services.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        <div className="absolute inset-0 z-10 bg-black/55" />
         
         <div className="relative z-20 text-center px-4">
           <motion.h1

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Phone, Mail, MapPin } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 // Custom TikTok Icon since it's not in lucide-react by default
 const TikTokIcon = ({ className }: { className?: string }) => (
@@ -14,16 +15,18 @@ const TikTokIcon = ({ className }: { className?: string }) => (
 );
 
 export function Footer() {
+  const { t } = useTranslation();
+
   const quickLinks = [
-    { name: 'Accueil', path: '/' },
-    { name: 'À Propos', path: '/a-propos' },
-    { name: 'Services', path: '/services' },
-    { name: 'Tarifs', path: '/tarifs' },
-    { name: 'Réalisations', path: '/realisations' },
-    { name: 'Galerie', path: '/galerie' },
-    { name: 'Notre Équipe', path: '/equipe' },
-    { name: 'Contact', path: '/contact' },
-    { name: 'Réservation', path: '/reservation' },
+    { name: t('nav.home'), path: '/' },
+    { name: t('nav.about'), path: '/a-propos' },
+    { name: t('nav.services'), path: '/services' },
+    { name: t('nav.pricing'), path: '/tarifs' },
+    { name: t('nav.work'), path: '/realisations' },
+    { name: t('nav.gallery'), path: '/galerie' },
+    { name: t('nav.team'), path: '/equipe' },
+    { name: t('nav.contact'), path: '/contact' },
+    { name: t('nav.book'), path: '/reservation' },
   ];
 
   return (
@@ -34,9 +37,11 @@ export function Footer() {
           {/* Colonne 1 — Identité */}
           <div className="space-y-4">
             <Link to="/" className="inline-block">
-              <h2 className="text-3xl font-bold text-primary tracking-tight">
-                KPL SERVICES
-              </h2>
+              <img
+                src="https://i.postimg.cc/vZQQ6y8s/logo.png"
+                alt="KPL SERVICES"
+                className="h-16 w-auto object-contain"
+              />
             </Link>
             <p className="text-lg font-medium text-gray-300">
               KPL Events & Surprise
@@ -50,7 +55,7 @@ export function Footer() {
           <div>
             <h3 className="text-xl font-semibold mb-6 text-white flex items-center">
               <span className="w-8 h-1 bg-primary mr-3 rounded-full"></span>
-              Navigation rapide
+              {t('footer.quick_links')}
             </h3>
             <ul className="grid grid-cols-2 gap-x-4 gap-y-3">
               {quickLinks.map((link) => (
@@ -71,7 +76,7 @@ export function Footer() {
           <div>
             <h3 className="text-xl font-semibold mb-6 text-white flex items-center">
               <span className="w-8 h-1 bg-primary mr-3 rounded-full"></span>
-              Contact & Réseaux
+              {t('footer.contact_social')}
             </h3>
             <ul className="space-y-4 text-sm text-gray-400">
               <li className="flex items-start">
@@ -132,9 +137,9 @@ export function Footer() {
 
         {/* Séparateur et Copyright */}
         <div className="mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-sm text-gray-500">
-          <p>© 2025 KPL SERVICES — Tous droits réservés</p>
+          <p>© 2025 KPL SERVICES — {t('footer.rights')}</p>
           <p>
-            Développé par <a href="https://logonova.site" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-white transition-colors">Logonova Agency</a>
+            {t('footer.developed_by')} <a href="https://logonova.site" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-white transition-colors">Logonova Agency</a>
           </p>
         </div>
       </div>
