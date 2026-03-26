@@ -27,9 +27,9 @@ export function SEO({ title, description, keywords, image, url, schema }: SEOPro
       <link rel="canonical" href={fullUrl} />
 
       {/* Hreflang for i18n SEO */}
-      <link rel="alternate" hreflang="fr" href={fullUrl} />
-      <link rel="alternate" hreflang="en" href={`${baseUrl}/en${url || ''}`} />
-      <link rel="alternate" hreflang="x-default" href={fullUrl} />
+      <link rel="alternate" hrefLang="fr" href={fullUrl} />
+      <link rel="alternate" hrefLang="en" href={`${baseUrl}/en${url || ''}`} />
+      <link rel="alternate" hrefLang="x-default" href={fullUrl} />
 
       {/* Open Graph */}
       <meta property="og:title" content={`${title} | KPL SERVICES`} />
