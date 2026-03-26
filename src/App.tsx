@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Outlet, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 // Import des composants de layout
 import { Navbar, Footer } from './components/layout';
@@ -114,6 +115,21 @@ function PublicLayout() {
   );
 }
 
+function AdminLayoutWrapper() {
+  return (
+    <>
+      <Helmet>
+        <link rel="manifest" href="/manifest-admin.json" />
+        <meta name="theme-color" content="#E91E8C" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="KPL Admin" />
+      </Helmet>
+      <Outlet />
+    </>
+  );
+}
+
 function App() {
   return (
     <Router>
@@ -134,22 +150,24 @@ function App() {
         </Route>
 
         {/* Routes Admin (sans Layout public) */}
-        <Route path="/admin" element={<Login />} />
-        
-        <Route 
-          element={
-            <ProtectedRoute>
-              <DashboardLayout />
-            </ProtectedRoute>
-          }
-        >
-          <Route path="/admin/dashboard" element={<Dashboard />} />
-          <Route path="/admin/reservations" element={<Reservations />} />
-          <Route path="/admin/messages" element={<Messages />} />
-          <Route path="/admin/realisations" element={<AdminRealisations />} />
-          <Route path="/admin/galerie" element={<AdminGalerie />} />
-          <Route path="/admin/temoignages" element={<Temoignages />} />
-          <Route path="/admin/parametres" element={<Parametres />} />
+        <Route element={<AdminLayoutWrapper />}>
+          <Route path="/admin" element={<Login />} />
+          
+          <Route 
+            element={
+              <ProtectedRoute>
+                <DashboardLayout />
+              </ProtectedRoute>
+            }
+          >
+            <Route path="/admin/dashboard" element={<Dashboard />} />
+            <Route path="/admin/reservations" element={<Reservations />} />
+            <Route path="/admin/messages" element={<Messages />} />
+            <Route path="/admin/realisations" element={<AdminRealisations />} />
+            <Route path="/admin/galerie" element={<AdminGalerie />} />
+            <Route path="/admin/temoignages" element={<Temoignages />} />
+            <Route path="/admin/parametres" element={<Parametres />} />
+          </Route>
         </Route>
       </Routes>
     </Router>

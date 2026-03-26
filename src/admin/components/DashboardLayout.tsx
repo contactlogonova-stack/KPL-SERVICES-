@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate, Outlet } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
   LayoutDashboard, Calendar, MessageSquare, Images, 
-  Camera, Star, Settings, LogOut, Menu, Bell 
+  Camera, Star, Settings, LogOut, Menu, Bell, Download 
 } from 'lucide-react';
 import { supabase } from '../../lib/supabase';
 
@@ -20,10 +20,33 @@ const navItems = [
 export default function DashboardLayout() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [pendingCount, setPendingCount] = useState(0);
+  const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
+  const [isInstallable, setIsInstallable] = useState(false);
+  const [isInstalled, setIsInstalled] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
 
   useEffect(() => {
+    // Check if already installed
+    if (window.matchMedia('(display-mode: standalone)').matches) {
+      setIsInstalled(true);
+    }
+
+    const handleBeforeInstallPrompt = (e: Event) => {
+      e.preventDefault();
+      setDeferredPrompt(e);
+      setIsInstallable(true);
+    };
+
+    const handleAppInstalled = () => {
+      setIsInstalled(true);
+      setIsInstallable(false);
+      setDeferredPrompt(null);
+    };
+
+    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+    window.addEventListener('appinstalled', handleAppInstalled);
+
     fetchPendingCount();
     
     // S'abonner aux changements pour mettre à jour le badge en temps réel
@@ -35,9 +58,21 @@ export default function DashboardLayout() {
       .subscribe();
 
     return () => {
+      window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+      window.removeEventListener('appinstalled', handleAppInstalled);
       supabase.removeChannel(channel);
     };
   }, []);
+
+  const handleInstallClick = async () => {
+    if (!deferredPrompt) return;
+    deferredPrompt.prompt();
+    const { outcome } = await deferredPrompt.userChoice;
+    if (outcome === 'accepted') {
+      setDeferredPrompt(null);
+      setIsInstallable(false);
+    }
+  };
 
   const fetchPendingCount = async () => {
     try {
@@ -144,7 +179,17 @@ export default function DashboardLayout() {
             <h2 className="text-xl font-semibold text-gray-800">{pageTitle}</h2>
           </div>
           
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-4 lg:gap-5">
+            {isInstallable && !isInstalled && (
+              <button
+                onClick={handleInstallClick}
+                className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-[#E91E8C] bg-[#E91E8C]/10 hover:bg-[#E91E8C]/20 rounded-lg transition-colors border border-[#E91E8C]/20"
+                title="Installer l'application"
+              >
+                <Download className="w-4 h-4" />
+                <span className="hidden sm:inline">Installer</span>
+              </button>
+            )}
             <Link to="/admin/reservations" className="relative p-2 text-gray-600 hover:bg-gray-100 rounded-full cursor-pointer transition-colors">
               <Bell className="w-6 h-6" />
               {pendingCount > 0 && (
