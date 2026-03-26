@@ -18,7 +18,7 @@ L'application inclut également un **tableau de bord administrateur** complet et
 - **Multilingue (FR/EN)** : Support complet du français et de l'anglais pour une clientèle internationale.
 - **Système de Réservation** : Formulaire interactif en plusieurs étapes pour faciliter les demandes de réservation de packs (Mariage, Anniversaire, etc.).
 - **Galerie & Réalisations** : Affichage dynamique et filtrable des projets passés pour inspirer les futurs clients.
-- **Tableau de Bord Administrateur** : Interface privée et sécurisée (via Firebase Auth) pour gérer les réservations, les messages, et le contenu public.
+- **Tableau de Bord Administrateur** : Interface privée et sécurisée (via Supabase Auth) pour gérer les réservations, les messages, et le contenu public.
 - **Design Responsive** : Interface moderne, élégante et fluide, parfaitement adaptée à tous les écrans (mobile, tablette, desktop).
 - **Animations** : Transitions fluides et animations d'apparition pour une expérience utilisateur premium.
 
@@ -30,7 +30,7 @@ L'application inclut également un **tableau de bord administrateur** complet et
 - **Animations** : Framer Motion (`motion/react`)
 - **Icônes** : Lucide React
 - **Internationalisation** : React i18next
-- **Backend / Base de données** : Firebase (Firestore, Authentication)
+- **Backend / Base de données** : Supabase (PostgreSQL, Authentication, Storage)
 
 ## 🚀 Installation et Lancement
 
@@ -52,14 +52,10 @@ L'application inclut également un **tableau de bord administrateur** complet et
    ```
 
 3. **Configuration des variables d'environnement**
-   Créez un fichier `.env` à la racine du projet et ajoutez vos clés de configuration Firebase (nécessaires pour le backend et l'authentification admin) :
+   Créez un fichier `.env` à la racine du projet et ajoutez vos clés de configuration Supabase (nécessaires pour la base de données PostgreSQL et l'authentification) :
    ```env
-   VITE_FIREBASE_API_KEY=votre_api_key
-   VITE_FIREBASE_AUTH_DOMAIN=votre_auth_domain
-   VITE_FIREBASE_PROJECT_ID=votre_project_id
-   VITE_FIREBASE_STORAGE_BUCKET=votre_storage_bucket
-   VITE_FIREBASE_MESSAGING_SENDER_ID=votre_messaging_sender_id
-   VITE_FIREBASE_APP_ID=votre_app_id
+   VITE_SUPABASE_URL=votre_supabase_url
+   VITE_SUPABASE_ANON_KEY=votre_supabase_anon_key
    ```
 
 4. **Lancer le serveur de développement**
