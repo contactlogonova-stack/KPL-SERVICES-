@@ -140,6 +140,12 @@ export default function Realisations() {
         keywords="réalisations décoration, portfolio événementiel, mariage Lomé, anniversaire Togo"
         image="https://i.postimg.cc/SnfsLSPF/realisations.jpg"
         url="/realisations"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": "Portfolio des Réalisations KPL SERVICES",
+          "description": "Découvrez nos plus belles décorations événementielles."
+        }}
       />
       {/* SECTION 1 - Hero Réalisations */}
       <section 

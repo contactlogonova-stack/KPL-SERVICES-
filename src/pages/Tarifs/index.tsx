@@ -101,6 +101,15 @@ export default function Tarifs() {
         keywords="tarifs décoration, prix mariage Togo, pack anniversaire, formules événement Lomé"
         image="https://i.postimg.cc/qtB71ffY/tarifs.png"
         url="/tarifs"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Packs Anniversaire Femme" },
+            { "@type": "ListItem", "position": 2, "name": "Packs Anniversaire Homme" },
+            { "@type": "ListItem", "position": 3, "name": "Packs Mariage" }
+          ]
+        }}
       />
       {/* SECTION 1 - Hero Tarifs */}
       <section 

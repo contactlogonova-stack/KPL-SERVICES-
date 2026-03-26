@@ -77,6 +77,19 @@ export default function APropos() {
         keywords="à propos KPL SERVICES, histoire agence événementielle, Lomé Togo"
         image="https://i.postimg.cc/gwc0g99r/a-propos.jpg"
         url="/a-propos"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "KPL SERVICES",
+            "foundingDate": "2018",
+            "founder": {
+              "@type": "Person",
+              "name": "KPOSSOUALI LYDIE"
+            }
+          }
+        }}
       />
       {/* SECTION 1 - Hero */}
       <section 

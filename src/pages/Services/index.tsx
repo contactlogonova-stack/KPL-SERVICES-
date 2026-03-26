@@ -43,6 +43,16 @@ export default function Services() {
         keywords="services décoration, organisation surprise, location matériel événement, Lomé"
         image="https://i.postimg.cc/xcbNmSYQ/services.jpg"
         url="/services"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Décoration Événementielle",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "KPL SERVICES"
+          },
+          "areaServed": "Lomé, Togo"
+        }}
       />
       {/* SECTION 1 - Hero Services */}
       <section 

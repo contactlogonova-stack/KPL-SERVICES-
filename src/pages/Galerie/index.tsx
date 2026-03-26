@@ -84,6 +84,12 @@ export default function Galerie() {
         keywords="galerie photo décoration, images mariage Lomé, photos événement Togo"
         image="https://i.postimg.cc/Wb04fX0v/galerie.jpg"
         url="/galerie"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "ImageGallery",
+          "name": "Galerie Photo KPL SERVICES",
+          "description": "Photos de nos décorations événementielles à Lomé, Togo."
+        }}
       />
       {/* SECTION 1 - Hero Galerie */}
       <section className="relative w-full h-[40vh] flex items-center justify-center overflow-hidden">

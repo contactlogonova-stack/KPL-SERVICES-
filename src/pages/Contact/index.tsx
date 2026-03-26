@@ -99,6 +99,16 @@ export default function Contact() {
         keywords="contact KPL SERVICES, devis décoration Lomé, agence événementielle Togo"
         image="https://i.postimg.cc/q79r1vBq/contact.jpg"
         url="/contact"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "mainEntity": {
+            "@type": "LocalBusiness",
+            "name": "KPL SERVICES",
+            "telephone": "+22891333468",
+            "email": "kpllyly@gmail.com"
+          }
+        }}
       />
       {/* SECTION 1 - Hero Contact */}
       <section className="relative w-full h-[40vh] flex items-center justify-center overflow-hidden">

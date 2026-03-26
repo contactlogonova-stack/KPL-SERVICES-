@@ -42,6 +42,21 @@ export default function Equipe() {
         keywords="équipe KPL SERVICES, décorateurs Lomé, organisateurs événement Togo, KPOSSOUALI LYDIE"
         image="https://i.postimg.cc/zX2vF5Wk/equipe.jpg"
         url="/equipe"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "KPL SERVICES",
+            "employee": [
+              {
+                "@type": "Person",
+                "name": "KPOSSOUALI LYDIE",
+                "jobTitle": "Directrice Générale"
+              }
+            ]
+          }
+        }}
       />
       {/* SECTION 1 - Hero Équipe */}
       <section className="relative w-full h-[40vh] flex items-center justify-center overflow-hidden">

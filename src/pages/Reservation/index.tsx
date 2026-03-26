@@ -166,6 +166,12 @@ export default function Reservation() {
         description="Réservez votre décoration événementielle avec KPL SERVICES. Choisissez votre pack et planifiez votre événement à Lomé en quelques clics."
         keywords="réservation décoration, réserver événement Lomé, pack anniversaire, devis mariage Togo"
         url="/reservation"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Réservation - KPL SERVICES",
+          "description": "Formulaire de réservation pour nos services de décoration."
+        }}
       />
       
       {/* Progress Bar */}

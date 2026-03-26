@@ -53,11 +53,17 @@ export default function Accueil() {
   return (
     <div className="flex flex-col w-full">
       <SEO 
-        title="Accueil"
-        description="KPL SERVICES - Agence de décoration événementielle à Lomé, Togo. Mariages, anniversaires, surprises et événements sur mesure. Toujours à votre service."
+        title={t('nav.home')}
+        description={t('description')}
         keywords="décoration événementielle, mariage Lomé, anniversaire Togo, KPL SERVICES, organisation événement"
         image="https://i.postimg.cc/JHX7sMJC/accueil.jpg"
         url="/"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "KPL SERVICES",
+          "url": "https://kpl-services.com/"
+        }}
       />
       {/* Hero Section */}
       <section 
