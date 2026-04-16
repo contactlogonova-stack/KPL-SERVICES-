@@ -21,6 +21,7 @@ import NotFound from './pages/NotFound';
 // Import des pages admin
 import Login from './admin/pages/Login';
 import Dashboard from './admin/pages/Dashboard';
+import UpdatePassword from './admin/pages/UpdatePassword';
 import Reservations from './admin/pages/Reservations';
 import Messages from './admin/pages/Messages';
 import AdminRealisations from './admin/pages/Realisations';
@@ -152,6 +153,7 @@ function App() {
         {/* Routes Admin (sans Layout public) */}
         <Route element={<AdminLayoutWrapper />}>
           <Route path="/admin" element={<Login />} />
+          <Route path="/admin/update-password" element={<UpdatePassword />} />
           
           <Route 
             element={
