@@ -1,0 +1,14 @@
+{
+  "name": "kpl-services-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "web",
+    "admin"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=web",
+    "build": "npm run build --workspaces && rm -rf dist && cp -r web/dist dist",
+    "lint": "npm run lint --workspaces"
+  }
+}
