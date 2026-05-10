@@ -1,0 +1,33 @@
+name: Cleanup Dead Code 2
+
+on:
+  workflow_dispatch:
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Supprimer le code mort restant
+        run: |
+          rm -rf web/src/admin/
+          rm -f index.html
+          rm -f vite.config.ts
+          rm -f tsconfig.json
+          rm -f netlify.toml
+          rm -f package.json
+          rm -f package-lock.json
+          rm -f cleanup.sh
+          rm -rf public/
+
+      - name: Commit et push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add -A
+          git commit -m "chore: suppression monolithe racine et web/src/admin"
+          git push
