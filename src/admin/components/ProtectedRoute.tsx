@@ -30,7 +30,7 @@ export default function ProtectedRoute({ children }: { children?: React.ReactNod
   }
 
   if (!isAuthenticated) {
-    return <Navigate to="/" replace />;
+    return <Navigate to="/admin" replace />;
   }
 
   return children ? <>{children}</> : <Outlet />;
