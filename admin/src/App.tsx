@@ -2,17 +2,17 @@ import { BrowserRouter as Router, Routes, Route, Outlet, useLocation } from 'rea
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 
-import Login from './pages/Login';
-import Dashboard from './pages/Dashboard';
-import UpdatePassword from './pages/UpdatePassword';
-import Reservations from './pages/Reservations';
-import Messages from './pages/Messages';
-import AdminRealisations from './pages/Realisations';
-import AdminGalerie from './pages/Galerie';
-import Temoignages from './pages/Temoignages';
-import Parametres from './pages/Parametres';
-import ProtectedRoute from './components/ProtectedRoute';
-import DashboardLayout from './components/DashboardLayout';
+import Login from './admin/pages/Login';
+import Dashboard from './admin/pages/Dashboard';
+import UpdatePassword from './admin/pages/UpdatePassword';
+import Reservations from './admin/pages/Reservations';
+import Messages from './admin/pages/Messages';
+import AdminRealisations from './admin/pages/Realisations';
+import AdminGalerie from './admin/pages/Galerie';
+import Temoignages from './admin/pages/Temoignages';
+import Parametres from './admin/pages/Parametres';
+import ProtectedRoute from './admin/components/ProtectedRoute';
+import DashboardLayout from './admin/components/DashboardLayout';
 
 function TitleUpdater() {
   const location = useLocation();
